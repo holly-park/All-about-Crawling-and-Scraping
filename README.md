@@ -13,7 +13,7 @@
 
 urllib: HTTP 나 FTP를 활용하여 데이터를 다운로드 한다. 그 중에서도 urllib.request는 웹상에있는 데이터에 접근이 가능하다. Authorization, Redirect, Cookie처럼 다양한 요청과 처리를 지원하기도 한다. Get방식은 Http Header에 포함하여 데이터를 전송하고, Post방식은 HTTP Body포함하여 데이터를 전송한다
 
-Beautifulsoup은 데이터를 웹상으로부터 스크레이핑하기 위한 파이썬 라이브러리이다.
+<b>Beautifulsoup</b>은 데이터를 웹상으로부터 스크레이핑하기 위한 파이썬 라이브러리이다.
 
 a.get('href')   -----------> 태그 a에서 href 속성의 값(하이퍼링크 url) 추출 
 
