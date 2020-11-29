@@ -56,4 +56,8 @@ inner = soup.select('.book_info_inner > div')[1]
 
 <b>Selenium</b>은 webdriver라는 API를 통해 운영체제에 설치된 Chrome등의 브라우저를 제어하게 된다. 브라우저를 직접 동작시킨다는 것은 JavaScript를 이용해 비동기적으로 혹은 뒤늦게 불러와지는 컨텐츠들을 가져올 수 있다는 것이다
 
+크롬 드라이버 설치: https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+
+
 
