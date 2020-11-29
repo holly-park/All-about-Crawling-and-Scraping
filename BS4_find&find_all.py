@@ -29,9 +29,12 @@ print(imgtag['alt'])    #테스트 이미지_1
 
 
 imgtag = soup.findAll('img')
-
+ 
+#print(imgtag[0].get_text())  첫번째 요소만 프린트 하고 싶을 경우
 for tag in imgtag:
     print(tag['alt'])   #테스트 이미지_1
                         #테스트 이미지_2
                         #테스트 이미지_3
+            
+
 
