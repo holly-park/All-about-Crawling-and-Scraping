@@ -47,6 +47,7 @@ soup.select('태그 > 자식태그')
 
 soup.select('태그 자손태그')
 
+inner = soup.select('.book_info_inner > div')[1]
 
 
 
