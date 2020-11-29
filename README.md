@@ -36,11 +36,17 @@ soup.find_all(["a", "b"])    ----->  or 조건(a태그이거나 b태그인 것)
 soup.body.b     ------>  body 태그 아래의 첫번째 b 태그
 
 **bs의 select 사용법**
+
 soup.select('태그')
+
 soup.select('.클래스명') 혹은 ('태그.클래스명')
+
 soup.select('#아이디명') 혹은 ('태그#아이디명')
+
 soup.select('태그 > 자식태그')
+
 soup.select('태그 자손태그')
+
 
 
 
