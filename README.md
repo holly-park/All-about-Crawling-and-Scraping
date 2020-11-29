@@ -23,5 +23,17 @@ soup.title.string  --------> title 태그의 문자값 추출하기
 
 soup.find(id="link")  -----> id가 link인 태그와 값을 추출하기  
 
-soup.TagName.parent   -----> 특정 태그의 상위 태그 값 추출하기   \n
+soup.TagName.parent   -----> 특정 태그의 상위 태그 값 추출하기   
+
+soup.find_all("a", limit=2)    ---->  2개만 가져오기
+
+soup.title.find_all(string=True)   ---->  title에서 String만 가져오기
+
+soup.find_all("p", "title")    ----> P태그이면서 class(속성 값)이 title인 것
+
+soup.find_all(["a", "b"])    ----->  or 조건(a태그이거나 b태그인 것)
+
+soup.body.b     ------>  body 태그 아래의 첫번째 b 태그
+
+
 
