@@ -15,7 +15,9 @@ urllib: HTTP 나 FTP를 활용하여 데이터를 다운로드 한다. 그 중�
 
 Beautifulsoup은 데이터를 웹상으로부터 스크레이핑하기 위한 파이썬 라이브러리이다.
 
-<1>imgtag = soup.find('img')
-print(imgtag['alt'])
+a.get('href')   -----------> 태그 a에서 href 속성의 값(하이퍼링크 url) 추출
+soup.title.name    --------> title태그의 이름 title 추출하기
+soup.title.string  --------> title 태그의 문자값 추출하기
+soup.find(id="link")  -----> id가 link인 태그와 값을 추출하기
+soup.TagName.parent   -----> 특정 태그의 상위 태그 값 추출하기
 
-<2>
