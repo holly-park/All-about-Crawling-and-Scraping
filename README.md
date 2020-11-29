@@ -47,6 +47,8 @@ soup.select('태그 > 자식태그')
 
 soup.select('태그 자손태그')
 
+soup.select(selector='a[href]')    -----> 리스트 타입
+
 inner = soup.select('.book_info_inner > div')[1]
 
 
