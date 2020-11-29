@@ -11,7 +11,7 @@
 [크롤링과 스크레이핑의 차이점은 뭘까?]
 크롤링(crawling)은 정기적으로 웹페이지를 순회하기 때문에 최신의 정보를 다운로드하고 정확히 유지할 수 있다. 한편, 스크레이핑(scraping)은 웹페이지의 구조로부터 특정 데이터를 추출하는 것을 말한다.
 
-urllib: HTTP 나 FTP를 활용하여 데이터를 다운로드 한다. 그 중에서도 urllib.request는 웹상에있는 데이터에 접근이 가능하다. Authorization, Redirect, Cookie처럼 다양한 요청과 처리를 지원하기도 한다. Get방식은 Http Header에 포함하여 데이터를 전송하고, Post방식은 HTTP Body포함하여 데이터를 전송한다
+<b>urllib</b>은 HTTP 나 FTP를 활용하여 데이터를 다운로드 한다. 그 중에서도 urllib.request는 웹상에있는 데이터에 접근이 가능하다. Authorization, Redirect, Cookie처럼 다양한 요청과 처리를 지원하기도 한다. Get방식은 Http Header에 포함하여 데이터를 전송하고, Post방식은 HTTP Body포함하여 데이터를 전송한다
 
 <b>Beautifulsoup</b>은 데이터를 웹상으로부터 스크레이핑하기 위한 파이썬 라이브러리이다.
 
@@ -35,6 +35,7 @@ soup.find_all(["a", "b"])    ----->  or 조건(a태그이거나 b태그인 것)
 
 soup.body.b     ------>  body 태그 아래의 첫번째 b 태그
 
+
 **bs의 select 사용법**
 
 soup.select('태그')
@@ -51,5 +52,8 @@ soup.select(selector='a[href]')    -----> 리스트 타입
 
 inner = soup.select('.book_info_inner > div')[1]
 
+
+
+<b>Selenium</b>은 webdriver라는 API를 통해 운영체제에 설치된 Chrome등의 브라우저를 제어하게 된다. 브라우저를 직접 동작시킨다는 것은 JavaScript를 이용해 비동기적으로 혹은 뒤늦게 불러와지는 컨텐츠들을 가져올 수 있다는 것이다
 
 
